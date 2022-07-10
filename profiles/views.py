@@ -6,7 +6,7 @@ from drf_api.permissions import IsOwnerOrReadOnly
 
 class ProfileList(generics.ListAPIView):
     queryset = Profile.objects.all()
-    serializer_class = ProfileSerializer()
+    serializer_class = ProfileSerializer
 
 
 class ProfileDetail(generics.RetrieveUpdateAPIView):
